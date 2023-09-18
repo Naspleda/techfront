@@ -9,6 +9,9 @@ import { HomeComponent } from './home/home.component';
 import { RegistrarPersonaComponent } from './registrar-persona/registrar-persona.component'
 import { FormsModule } from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { TransferenciasComponent } from './transferencias/transferencias.component';
+import { ExtraerDineroComponent } from './extraer-dinero/extraer-dinero.component';
+import { IngresarDineroComponent } from './ingresar-dinero/ingresar-dinero.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     ListaPersonasComponent,
     HomeComponent,
     RegistrarPersonaComponent,
-    DashboardComponent
+    DashboardComponent,
+    TransferenciasComponent,
+    ExtraerDineroComponent,
+    IngresarDineroComponent
   ],
   imports: [
     BrowserModule,
