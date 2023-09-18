@@ -1,0 +1,25 @@
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <h2 class="mb-4 text-center">Registrar</h2>
+        <form (ngSubmit)= "onSubmit()">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="name" name="name" [(ngModel)]="persona.name" required>
+            </div>
+            <div class="form-group">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" class="form-control" id="pwcard" name="pwcard" [(ngModel)]="persona.pwcard" required>
+            </div>
+            <div class="form-group">
+                <label for="nTarjeta">N Tarjeta:</label>
+                <input type="text" class="form-control" id="numcard" name="numcard"  [(ngModel)]="persona.numcard" required>
+            </div>
+            <div class="form-group">
+                <label for="salario">Salario:</label>
+                <input type="text" class="form-control" id="salary" name="salary"  [(ngModel)]="persona.salary" required>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Registrar</button>
+        </form>
+    </div>
+</div>
