@@ -1,1 +1,12 @@
-<p>transferencias works!</p>
+<div>
+    <label for="idOrigen">ID de Origen:</label>
+    <input type="number" id="idOrigen" name="idOrigen" [(ngModel)]="idOrigen" required>
+  
+    <label for="idDestino">ID de Destino:</label>
+    <input type="number" id="idDestino" name="idDestino" [(ngModel)]="idDestino" required>
+  
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" id="cantidad" name="cantidad" [(ngModel)]="cantidad" required>
+  
+    <button (click)="transferirDinero(idOrigen, idDestino, cantidad)">Transferir Dinero</button>
+</div>

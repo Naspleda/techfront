@@ -1,1 +1,14 @@
-<p>ingresar-dinero works!</p>
+<div>
+    <h2>Ingresar Dinero en Persona</h2>
+    <div>
+      <label for="personaId">ID de la Persona:</label>
+      <input type="number" id="personaId" [(ngModel)]="personaId" />
+    </div>
+    <div>
+      <label for="cantidad">Cantidad a Ingresar:</label>
+      <input type="number" id="cantidad" [(ngModel)]="cantidad" />
+    </div>
+    <div>
+      <button (click)="ingresarDinero(personaId, cantidad)">Ingresar Dinero</button>
+    </div>
+  </div>

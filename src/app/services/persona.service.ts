@@ -11,6 +11,7 @@ export class PersonaService {
   //Esta URL obtiene el listado de todas las personas
   private baseURL = 'http://localhost:8080/api/v1/personas';
 
+  
   constructor(private httpClient: HttpClient) { }
 
   getListaPersonas():Observable<Persona[]>{
@@ -33,8 +34,25 @@ export class PersonaService {
     return this.httpClient.delete(`${this.baseURL}/${id}`);
   }
 
-  ingresarDinero(){
-    
+  ingresarDinero(id: number, cantidad: number):Observable<any> {
+    const params = { cantidad: cantidad };
+    return this.httpClient.post(`${this.baseURL}/${id}/ingresar-dinero`, params);
   }
+
+  extraerDinero(id: number, cantidad: number):Observable<any> {
+    const params = { cantidad: cantidad };
+    return this.httpClient.post(`${this.baseURL}/${id}/extraer-dinero`, params);
+  }
+
+  transferirDinero(idOrigen: number, idDestino: number, cantidad: number):Observable<any>{
+    const params = {
+      idOrigen: idOrigen,
+      idDestino: idDestino,
+      cantidad: cantidad
+    };
+    return this.httpClient.post(`${this.baseURL}/transferir-dinero`, params);
+  }
+
+
 
 }
