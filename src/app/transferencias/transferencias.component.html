@@ -1,12 +1,16 @@
-<div>
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <h2 class="mb-4 text-center">Transferir Dinero</h2>
+    
     <label for="idOrigen">ID de Origen:</label>
-    <input type="number" id="idOrigen" name="idOrigen" [(ngModel)]="idOrigen" required>
+    <input type="number" id="idOrigen" class="form-control" name="idOrigen" [(ngModel)]="idOrigen" required>
   
     <label for="idDestino">ID de Destino:</label>
-    <input type="number" id="idDestino" name="idDestino" [(ngModel)]="idDestino" required>
+    <input type="number" id="idDestino" class="form-control" name="idDestino" [(ngModel)]="idDestino" required>
   
     <label for="cantidad">Cantidad:</label>
-    <input type="number" id="cantidad" name="cantidad" [(ngModel)]="cantidad" required>
+    <input type="number" id="cantidad" class="form-control" name="cantidad" [(ngModel)]="cantidad" required>
   
-    <button (click)="transferirDinero(idOrigen, idDestino, cantidad)">Transferir Dinero</button>
+    <a (click)="transferirDinero(idOrigen, idDestino, cantidad)" class="btn btn-primary my-2" href="/dashboard/1">Transferir Dinero</a>
+    </div>
 </div>

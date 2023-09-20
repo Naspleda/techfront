@@ -12,6 +12,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { TransferenciasComponent } from './transferencias/transferencias.component';
 import { ExtraerDineroComponent } from './extraer-dinero/extraer-dinero.component';
 import { IngresarDineroComponent } from './ingresar-dinero/ingresar-dinero.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { IngresarDineroComponent } from './ingresar-dinero/ingresar-dinero.compo
     DashboardComponent,
     TransferenciasComponent,
     ExtraerDineroComponent,
-    IngresarDineroComponent
+    IngresarDineroComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
